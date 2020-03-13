@@ -180,8 +180,16 @@ function lowerCaseStrings(strings) {
  * [2] Invoking `isItAnApple` with `['a', 'b', 'c' ]` will return `[ false, false, false ]`.
 */
 function isItAnApple(strings) {
-  return 
+  const yesApple = strings.map((arr) => {
+    if (arr == "apple") {
+      return true;
+    } else {
+      return false;
+    }
+  });
+  return yesApple;
 }
+
 
 /**
  * ### Challenge `removeApple`
