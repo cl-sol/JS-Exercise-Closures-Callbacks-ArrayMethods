@@ -251,7 +251,7 @@ function stringSmash(strings) {
 */
 function getFullNames(runners) {
   const runnerNames = runners.map((arr) => {
-    return arr.last_name + " " + arr.first_name;
+    return arr.last_name + ", " + arr.first_name;
   })
   return runnerNames;
 }
@@ -268,9 +268,14 @@ function getFullNames(runners) {
  * @returns an array with all the runners' first names in ALL CAPS.
  * The first names appear in the array in the same order the runners appear in the `runners` array.
 */
-function firstNamesAllCaps(/* CODE HERE */) {
-  /* CODE HERE */
+function firstNamesAllCaps(runners) {
+  const nameInCaps = runners.map((arr) => {
+    return arr.first_name.toUpperCase();
+  })
+  return nameInCaps;
 }
+
+
 
 /**
  * ### Challenge `getRunnersByTShirtSize`
