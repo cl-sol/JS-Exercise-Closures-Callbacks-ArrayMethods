@@ -227,8 +227,11 @@ function removeApple(strings) {
  * 
  * [2] Invoking `stringSmash` with `['a', 'b', 'c' ]` will return `abc`.
 */
-function stringSmash(/* code here */) {
-  /* code here */
+function stringSmash(strings) {
+  const combinedString = strings.reduce((accum, arr) => {
+    return accum + arr;
+  });
+  return combinedString;
 }
 
 // A local community center is holding a fund raising 5k fun run and has invited
@@ -246,8 +249,11 @@ function stringSmash(/* code here */) {
  * @returns an array with all the runners' full names in the following format: "Smith, John".
  * The full names appear in the array in the same order the runners appear in the `runners` array.
 */
-function getFullNames(/* CODE HERE */) {
-  /* CODE HERE */
+function getFullNames(runners) {
+  const runnerNames = runners.map((arr) => {
+    return arr.last_name + " " + arr.first_name;
+  })
+  return runnerNames;
 }
 
 /**
